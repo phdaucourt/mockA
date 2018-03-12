@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_MOCKA_VALUE_COMPARISON</CLSNAME>
+    <VERSION>1</VERSION>
+    <LANGU>E</LANGU>
+    <DESCRIPT>verifies if two values are equal</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <CLSABSTRCT>X</CLSABSTRCT>
+    <CLSFINAL>X</CLSFINAL>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <TPOOL>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+    <item/>
+   </TPOOL>
+   <LINES>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The class CL_ABAP_UNIT_ASSERT contains the following static methods for</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the verification of test expectations within</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE> &lt;DS:ABEN.ABAP_UNIT_GLOSRY&gt;ABAP Unit&lt;/&gt; test methods:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_EQUALS&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure the equality of two data objects. Please note that the arguments</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>are passed by reference. Objects are tested for identity only. Please</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>stick to the method ASSERT_THAT and the interface</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_CONSTRAINT&gt;IF_CONSTRAINT&lt;/&gt; for custom assertions.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_EQUALS_FLOAT&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure the equality of two decimal floats with a relative tolerance.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_DIFFERS&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure the value of two data objects not to be equal.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_BOUND&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure whether the reference of a reference variable is valid.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_NOT_BOUND&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure whether the reference of a reference variable is invalid.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_INITIAL&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure that a data object has its initial value.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_NOT_INITIAL&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure that a data object does not have its initial value.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_SUBRC&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Requests specific value of SY-SUBRC.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_TABLE_CONTAINS &lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure that a internal table contains a certain line.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_TEXT_MATCHES &lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure that a text matches to a</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE> &lt;DS:ABEN.REGEX_SYNTAX&gt;regular expression&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ASSERT_THAT &lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Ensure that the actual value adheres to a given</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>=</TDFORMAT>
+     <TDLINE>&lt;DS:IF.IF_CONSTRAINT&gt;Constraint&lt;/&gt;.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;FAIL&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Terminate the test with an unconditional error.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ABORT&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Cancel the test due to a missing prerequisite.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>All the methods have the optional importing parameters MSG, LEVEL, and</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>QUIT, which always have the same meaning:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;MSG&lt;/&gt; (Type: CSEQUENCE)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Contains a more detailed description of the error (if applicable)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;LEVEL&lt;/&gt; (Type: AUNIT_LEVEL)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Indicates the severity of the error; the following values are possible:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>TOLERABLE - Minor error (may be tolerable)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>CRITICAL - Critical error (default value)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>FATAL    - Fatal error</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;QUIT&lt;/&gt; (Type: AUNIT_FLOWCTRL)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Determines the flow control in the case of an error. The following</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>values can be passed:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>NO - No termination in the case of an error; processing of the current</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>method continues after the relevant method is called</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>METHOD  - The currently processed test method is terminated (default</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>value)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>CLASS   - The currently processed test class is terminated</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B2</TDFORMAT>
+     <TDLINE>PROGRAM - The test of the currently processed main program is</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>terminated: The current test class is terminated and all other test</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>classes in the program are ignored.</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>All the assert methods have the following mandatory importing parameter:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;ACT&lt;/&gt; (Type: Any)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The object to be verified</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>AS</TDFORMAT>
+     <TDLINE>The comparing method ASSERT_EQUALS additionally requires a parameter for</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDLINE>the expectation:</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;EXP&lt;/&gt; (Type: Any)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>The identically expected object</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;ZH&gt;TOL&lt;/&gt; (Type: f)</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>/</TDFORMAT>
+     <TDLINE>Allows you to compare floating point numbers for the passed tolerance</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>U1</TDFORMAT>
+     <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>&lt;DS:KENO.3F7182087A5E002FE10000000A1148F9&gt;Knowledge Warehouse&lt;/&gt;</TDLINE>
+    </TLINE>
+    <TLINE>
+     <TDFORMAT>B1</TDFORMAT>
+     <TDLINE>Package SABP_UNIT_SAMPLE</TDLINE>
+    </TLINE>
+   </LINES>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MOCKA_VALUE_COMPARISON</CLSNAME>
+     <CMPNAME>ASSERT_EQUALS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Ensure Equality of Two Data Objects</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CLSNAME>ZCL_MOCKA_VALUE_COMPARISON</CLSNAME>
+     <CMPNAME>RTOL_MIN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Minimum Tolerance for comparsion type F</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
